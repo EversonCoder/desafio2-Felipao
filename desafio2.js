@@ -27,14 +27,11 @@ function resultRankPlayer(){
     else if (balanceOfVictories >=91 && balanceOfVictories <=100){
         return "Lendário"
     }
-    else if(balanceOfVictories >=101){
+    else {
         return "Imortal"
-    }
-    else{
-        return "Radiante"
-    }
+    }   
 };
 
-let rankPlayer= resultRankPlayer()
+let rankPlayer= resultRankPlayer();
 
 console.log(`O Herói tem de saldo de ${balanceOfVictories} está no nível de ${rankPlayer}`)
